@@ -1,0 +1,21 @@
+@forward "dashboard";
+@use '../base/variables' as v;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+// Colores del proyecto
+$custom-colors: (
+    "blanco": v.$blanco,
+    "transparente": v.$transparente,
+    "primario": v.$primario,
+    "secundario": v.$secundario,
+    "terciario": v.$terciario
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$font-sizes: map-merge($font-sizes, ( 7: v.$fuente-xl ) ) ;
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

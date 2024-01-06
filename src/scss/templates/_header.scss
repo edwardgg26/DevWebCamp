@@ -1,0 +1,13 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.bg-header{
+    background: url("../img/grafico.svg"), linear-gradient(to right, rgba(v.$negro,1) ,rgba(v.$negro,.5) ), url("../img/header.jpg");
+    @include m.bg;
+}
+
+.logo{
+    &:hover{
+        color: v.$primario !important;
+    }
+}

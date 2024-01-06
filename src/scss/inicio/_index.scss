@@ -1,0 +1,8 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.bg-datos{
+    background: linear-gradient(to right, rgba(v.$primario,.7), rgba(v.$primario,.9) ), url("../img/bg_numeros.jpg");
+    @include m.bg;
+}
+
